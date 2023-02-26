@@ -1,0 +1,15 @@
+.content {
+    background-color: #F3F3F3;
+}
+.content-headers {
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+}
+
+.dashboard-widget{
+    background-color: white;
+    margin: 7px;
+    padding: 17px;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+}

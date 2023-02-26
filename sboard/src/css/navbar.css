@@ -1,0 +1,16 @@
+.nav-bar {
+    background-color: white;
+    border-right: 1px solid rgb(194, 194, 194);
+    padding: 10px;
+    padding-left:20px ;
+}
+
+.sboard-header {
+    color: #004998;
+    margin: 0px;
+    font-weight: 700;
+}
+.sboard-subheader{
+    font-weight: 700;
+    color: #606060;
+}
