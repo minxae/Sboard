@@ -11,7 +11,7 @@ function content() {
         <Routes>
             <Route exact path='/beschikbaarheid' element={<Availability/>}></Route>
             <Route exact path='/dashboard' element={<Dashboard/>}></Route>
-            <Route exact path='/presentations' element={<Presentations/>}></Route>
+            <Route exact path='/presentaties' element={<Presentations/>}></Route>
         </Routes>
     </div>
   );

@@ -14,7 +14,7 @@
 }
 
 .sboard-header {
-    color: #004998;
+    color: #1f9bee;
     margin: 0px;
     font-weight: 700;
 }
@@ -28,12 +28,6 @@
     margin-top: auto !important;
 }
 
-a {
-    text-decoration: none;
-    color: #636363;
-    font-weight: 500;
-}
-
 li {
     list-style: none;
     padding: 10px;
@@ -41,17 +35,12 @@ li {
     cursor: pointer;
     border-radius: 6px;
     margin: 2px;
+    font-weight: 500;
 }
 
 li:hover{
     background-color: var(--baseColor);
     margin-left: 5px;
-}
-
-li:hover > a{
-    color: white;
-}
-li:hover > svg{
     color: white;
 }
 
