@@ -1,8 +1,16 @@
+:root {
+    --baseColor: #3B8BE2
+}
+
 .nav-bar {
     background-color: white;
     border-right: 1px solid rgb(194, 194, 194);
-    padding: 10px;
-    padding-left:20px ;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.user-img{
+    border-radius: 6px;
 }
 
 .sboard-header {
@@ -10,7 +18,43 @@
     margin: 0px;
     font-weight: 700;
 }
-.sboard-subheader{
+
+.sboard-subheader {
     font-weight: 700;
     color: #606060;
+}
+
+.profile-item {
+    margin-top: auto !important;
+}
+
+a {
+    text-decoration: none;
+    color: #636363;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+li:hover{
+    background-color: var(--baseColor);
+    margin-left: 5px;
+}
+
+li:hover > a{
+    color: white;
+}
+li:hover > svg{
+    color: white;
+}
+
+ul {
+    padding: 0px;
 }

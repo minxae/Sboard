@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import '../css/navbar.css'
+import {Speedometer, Clock, ListUl}  from 'react-bootstrap-icons'
+
 
 function navbar() {
   return (
@@ -9,15 +11,25 @@ function navbar() {
         <p className='sboard-subheader'>NHL Stenden</p>
         <ul>
             <li>
-                <Link to="/dashboard">Dashboard</Link>
+                <Speedometer className='me-2'/> <Link to="/dashboard"> Dashboard</Link>
             </li>
             <li>
-                <Link to="/">Beschikbaarheid</Link>
+                <Clock className='me-2'/> <Link to="/beschikbaarheid">Beschikbaarheid</Link>
             </li>
             <li>
-                <Link to="/presentations">Presentaties</Link>
+                <ListUl className='me-2'/> <Link to="/presentations">Presentaties</Link>
             </li>
         </ul>
+        <div className='profile-item row align-items-center w-100 m-0 align-items-end'>
+            <div className='col-md-3'>
+                <img className='user-img' height="40px" src="/images/default.png"/>
+            </div>
+            <div className='col-md-9'>
+                <h5 className='m-0'>Elise Siersema</h5>
+                <p className='m-0'>Beschikbaar</p>
+            </div>
+            
+        </div>
     </div>
   );
 }
