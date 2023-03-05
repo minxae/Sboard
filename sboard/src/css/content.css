@@ -1,5 +1,7 @@
 .content {
     background-color: #F3F3F3;
+    overflow: auto;
+    height: 100%;
 }
 .content-headers {
     color: rgb(85, 85, 85);

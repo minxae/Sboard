@@ -1,29 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route, redirect} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import './index.css';
-
-//Layout props
-import Content from './content.js'
-import Navbar from './widgets/navbar'
-import ShortcutBar from './widgets/shortcutBar';
-
+import Sboard from './pages/sboard';
+import Login from './pages/login'
 import reportWebVitals from './reportWebVitals';
+import ProtectedRoutes from './middleware/protectedRoutes';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <Router>
-        <div className='container-fluid  wrapper'>
-            <div className='row h-100'>
-                <Navbar />
-                <Content />
-                <ShortcutBar />
-            </div>
-        </div>
-    </Router>
-  </React.StrictMode>
+    
+    <React.StrictMode>
+        <Provider store={store}>
+            <Router>
+                <Routes>
+                    <Route exact path='/login' element={<Login/>}></Route>
+                    <Route element={<ProtectedRoutes />}>
+                        <Route path='/*' element={<Sboard />}></Route>
+                    </Route>
+                </Routes>
+            </Router>
+        </Provider>
+    </React.StrictMode>
+    
 );
 
 // If you want to start measuring performance in your app, pass a function

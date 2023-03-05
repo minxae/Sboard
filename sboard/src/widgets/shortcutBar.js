@@ -1,4 +1,4 @@
-import '../css/shortcutBar.css' 
+import '../css/widgets/shortcutBar.css' 
 
 function shortcutBar() {
     return (

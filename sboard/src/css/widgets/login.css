@@ -1,0 +1,27 @@
+
+.login-item {
+    background-color: rgb(249 249 249);
+    border-radius: 6px;
+    min-width: 108px;
+    max-width: 406px;
+    padding: 51px;
+    border: 1px solid #e3e3e3;
+}
+
+.error {
+    color: #ff6144;
+    font-weight: 300;
+    text-align: center;
+}
+.login-btn {
+    background-color: #1999ed !important;
+    border-color: #1999ed  !important;
+    border:1px solid #1999ed !important;
+    transition: 0.4s;
+}
+.login-btn:hover {
+    background-color: #e3e3e3 !important; 
+    background: white !important;
+    color: #1999ed !important;
+}
+  

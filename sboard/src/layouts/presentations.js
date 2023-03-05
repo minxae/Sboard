@@ -1,4 +1,4 @@
-function presentations() {
+function Presentations() {
     return (
         <div>
         <h1 className="p-3 content-headers">Presentations</h1>
@@ -9,5 +9,5 @@ function presentations() {
     );
   }
   
-  export default presentations;
+  export default Presentations;
   

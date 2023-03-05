@@ -26,6 +26,12 @@
 
 .profile-item {
     margin-top: auto !important;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.1s;
+}
+.profile-item:hover {
+    margin-bottom:4px !important ;
 }
 
 li {
@@ -41,7 +47,7 @@ li {
 li:hover{
     background-color: var(--baseColor);
     margin-left: 5px;
-    color: white;
+    color: white !important;
 }
 
 ul {

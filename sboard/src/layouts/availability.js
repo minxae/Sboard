@@ -1,7 +1,7 @@
-function availability() {
+function Availability() {
     return (
         <div>
-        <h1 className="p-3 content-headers">Beschikbaar</h1>
+        <h1 className="p-3 content-headers">Beschikbaarheid</h1>
         <div className="">
 
         </div>
@@ -9,5 +9,5 @@ function availability() {
     );
   }
   
-  export default availability;
+  export default Availability;
   
