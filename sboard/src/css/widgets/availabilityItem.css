@@ -1,0 +1,34 @@
+.availability-item {
+    color: rgb(80, 80, 80);
+    background-color: white;
+    margin-bottom: 11px !important;
+    border-radius: 7px;
+    border: 1px solid #e1e1e1;
+    transition: 0.3s;
+}
+
+.ava-icon {
+    color: #1f9bee;
+    font-size: 21px;
+}
+.day {
+    font-weight: 700;
+    padding: 10px;
+    margin: 0;
+}
+
+.input-time {
+    margin: 0 auto;
+    max-width: 106px;
+    cursor: pointer;
+}
+
+.availability-header {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.active{
+    background-color: #1f9bee !important;
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+}

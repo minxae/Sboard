@@ -12,7 +12,7 @@ export const userSlice = createSlice({
     reducers : {
         setUser:  (state, action) => {
             state.userId =  action.payload.id
-            state.username =  action.payload.username
+            state.username =  action.payload.sub
             state.pfpLocation =  action.payload.pfpLocation
         }
     }

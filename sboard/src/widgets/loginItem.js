@@ -3,29 +3,30 @@ import { useDispatch } from "react-redux";
 import { redirect , useNavigate} from "react-router-dom";
 import "../css/widgets/login.css"
 import { setUser } from "../redux/user";
-import { login } from "../services/userService";
+import { login } from "../services/sessionService";
+import jwt_decode from "jwt-decode"
 
 function LoginItem() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [infoMessage, setInfoMessage] = useState('');
 
-    const dispatch = useDispatch()
-    const nav = useNavigate();
+    const dispatch = useDispatch();
     
     const userSession = async () =>{
         let data = await login(username, password);
-        const json = await data.json();
         if(data.status == 200){
             setInfoMessage("Success")
-            sessionStorage.setItem('token', data.headers.get("jwt-token"))
-            dispatch(setUser(json))
-            nav("/")
+            let jwt = data.headers.get("jwt-token")
+            let decodedJwt  = jwt_decode(jwt);
+            sessionStorage.setItem('token', jwt)
+            dispatch(setUser(decodedJwt))
+            window.location = "/"
         }else {
+            const json = await data.json();
             setInfoMessage(json.error)
         }
     }   
-
     
     return (
       <div className="row h-100 w-100 m-0 align-items-center justify-content-center">

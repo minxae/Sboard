@@ -4,10 +4,8 @@ import '../css/widgets/navbar.css'
 import {Speedometer, Clock, ListUl}  from 'react-bootstrap-icons'
 import { useSelector } from 'react-redux';
 
-
 function Navbar() {
     const {userId, username} = useSelector((state) => state.user)
-    console.log(userId)
     const nav = useNavigate();
     const navigate = (path) => {
         nav(path);

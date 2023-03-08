@@ -10,8 +10,6 @@ import Presentations from '../layouts/presentations'
 import Availability from '../layouts/availability';
 
 function Sboard() {
-
-
     return (
         <div className='container-fluid wrapper'>
             <div className='row h-100'>
@@ -27,6 +25,6 @@ function Sboard() {
             </div>
         </div>
     );
-  }
+}
   
 export default Sboard;
