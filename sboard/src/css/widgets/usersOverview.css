@@ -1,0 +1,19 @@
+.user {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: #1f9bee;
+    color: white !important;
+    border-color: #1f9bee;
+    font-weight: 600;
+}
+
+.admin-active {
+    color: #1f9bee;
+}

@@ -2,6 +2,8 @@ import {getAvailability} from "../services/availabilityService"
 import AvailabilityItem from "../widgets/availabilityItem";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+import { InfoCircle } from "react-bootstrap-icons";
+import { TailSpin } from "react-loader-spinner";
 
 function Availability() {
     const {userId} = useSelector((state) => state.user)
@@ -22,21 +24,35 @@ function Availability() {
         }
         fetchData()
     }, [userId])
+    
     return (
         <div>
             <h1 className="p-3 content-headers">Beschikbaarheid</h1>
+            <div className="alert ms-4 me-4 alert-info" role="alert">
+                <InfoCircle/> Vul hieronder uw beschikbaarheid in 🥳
+            </div>
+        
             <div className="p-4 row">
                 <div className="col">
                 {data ? (
                 <div>
-                    <AvailabilityItem day="Maandag" availabilityData={getDay("MONDAY", data)}/>
-                    <AvailabilityItem day="Dinsdag" availabilityData={getDay("TUESDAY", data)}/>
-                    <AvailabilityItem day="Woensdag" availabilityData={getDay("WEDNESDAY", data)}/>
-                    <AvailabilityItem day="Donderdag" availabilityData={getDay("THURSDAY", data)}/>
-                    <AvailabilityItem day="Vrijdag" availabilityData={getDay("FRIDAY", data)}/>
+                    <AvailabilityItem day="maandag" availabilityData={getDay("MONDAY", data)}/>
+                    <AvailabilityItem day="dinsdag" availabilityData={getDay("TUESDAY", data)}/>
+                    <AvailabilityItem day="woensdag" availabilityData={getDay("WEDNESDAY", data)}/>
+                    <AvailabilityItem day="donderdag" availabilityData={getDay("THURSDAY", data)}/>
+                    <AvailabilityItem day="vrijdag" availabilityData={getDay("FRIDAY", data)}/>
                 </div>
                 ) : (
-                <div>Loading...</div>
+                    <TailSpin
+                    height="40"
+                    width="40"
+                    color="#1f9bee"
+                    ariaLabel="tail-spin-loading"
+                    radius="1"
+                    wrapperStyle={{}}
+                    wrapperClass="justify-content-center"
+                    visible={true}
+                />
                 )}
                 </div>
             </div>

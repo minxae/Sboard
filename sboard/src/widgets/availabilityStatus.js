@@ -4,8 +4,6 @@ import {CheckLg, XLg}  from 'react-bootstrap-icons'
 import getUser from '../services/sboardService';
 
 function AvailabilityStatus() {
-
-    getUser();
     return (
         <div className="row">
             <div className="col dashboard-widget">
@@ -15,7 +13,7 @@ function AvailabilityStatus() {
                 </p>
                 <div className='row w-100 m-0 text-center'>
                     <div className='col m-1'>
-                        <button className='btn btn-primary availability-btn active'>Auto</button>
+                        <button className='btn btn-primary availability-btn active-d'>Auto</button>
                     </div>
                     <div className='col m-1'>
                         <button className='btn btn-primary availability-btn'><CheckLg/></button>

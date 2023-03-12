@@ -12,9 +12,9 @@
     font-size: 21px;
 }
 .day {
-    font-weight: 700;
     padding: 10px;
     margin: 0;
+    font-size: 15px;
 }
 
 .input-time {
@@ -31,4 +31,6 @@
     background-color: #1f9bee !important;
     color: white;
     border-radius: 6px 6px 0px 0px;
+    box-shadow: 3px 3px 5px -2px #bdbdbd;
+    border-color: #1f9bee;
 }

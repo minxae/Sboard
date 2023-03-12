@@ -13,6 +13,7 @@ export const userSlice = createSlice({
         setUser:  (state, action) => {
             state.userId =  action.payload.id
             state.username =  action.payload.sub
+            state.role = action.payload.role
             state.pfpLocation =  action.payload.pfpLocation
         }
     }
