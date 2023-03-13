@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { LockFill, PersonFill, PersonFillCheck, ShieldLockFill } from "react-bootstrap-icons";
+import { LockFill, PersonFill, PersonFillCheck, ShieldLockFill, TvFill } from "react-bootstrap-icons";
 
 
 function UsersWidgetItem(prop){
@@ -20,7 +20,6 @@ function UsersWidgetItem(prop){
                 {
                     role == "ROLE_ADMIN" ? <PersonFillCheck title="Admin" className="admin-active"/> : <PersonFill  title="Docent"/>
                 } 
-                
             </div>
             <div className="col text-end">
                 {

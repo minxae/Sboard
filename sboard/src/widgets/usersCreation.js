@@ -54,6 +54,7 @@ function UsersCreation() {
                 <select onChange={(e) => {setRole(e.target.value)}} className="form-control" id="role"  placeholder='Role'>
                     <option value="ROLE_DOCENT">Docent</option>
                     <option value="ROLE_ADMIN">Admin</option>
+                    <option value="ROLE_SCREEN">Screen</option>
                 </select>
             </div>
             <div className="form-check mb-3 c-p">

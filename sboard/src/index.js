@@ -19,7 +19,9 @@ root.render(
                     <Route exact path='/login' element={<Login/>}></Route>
                     <Route element={<ProtectedRoutes />}>
                         <Route path='/*' element={<Sboard />}></Route>
+                        <Route exact path='/Sboard' element={<div>SBOARD PREVIEWS SCREEN</div>}></Route>
                     </Route>
+                    
                 </Routes>
             </Router>
         </Provider>
