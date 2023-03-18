@@ -1,0 +1,41 @@
+.profile {
+    color: rgb(80, 80, 80);
+    background-color: white;
+    margin-bottom: 11px !important;
+    border-radius: 7px;
+    border: 1px solid #e1e1e1;
+    transition: 0.3s;
+}
+
+.border-7 {
+    border-radius: 7px 7px 0px 0px !important;
+}
+
+.banner {
+    background: linear-gradient(90deg,#FFBFBF, #C9E3FF);    
+    height: 100px;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.profile-btn {
+    background-color: #1999ed !important;
+    border-color: #1999ed !important;
+    border: 1px solid #1999ed !important;
+    color: white !important;
+    transition: 0.4s;
+}
+
+.border-bot-p {
+    border-bottom: 1px solid #ececec;
+}
+
+.acc-en {
+    background-color: rgb(51, 206, 110) !important;
+}
+.acc-dis {
+    background-color: rgb(201, 73, 73) !important;
+}

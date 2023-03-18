@@ -6,6 +6,7 @@ export async function getUser(id){
         const response = await fetch(url + endpoint,   {
             method : "GET",
             headers: {
+                "Authorization": "Bearer " + sessionStorage.getItem("token"),
                 "Content-type":  "application/json"
             },
         })
@@ -32,6 +33,7 @@ export async function getUsers(){
     }
 }
 
+//Admin only
 export async function addUser(obj){
     const endpoint = "/users";
     try {
@@ -46,6 +48,29 @@ export async function addUser(obj){
                 "password" : obj.password,
                 "pfpLocation" : "ava/profile.jpg",
                 "username" : obj.username,
+                "role" : obj.role
+            })
+        })
+        return response;
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+export async function updateUser(obj){
+    const endpoint = "/users/" + obj.userId;
+    try {
+        const response = await fetch(url + endpoint,   {
+            method : "PUT",
+            headers: {
+                "Authorization": "Bearer " + sessionStorage.getItem("token"),
+                "Content-type":  "application/json"
+            },
+            body : JSON.stringify({
+                "enabled": obj.enabled ? obj.enabled : true,
+                "password" : obj.password ? obj.password : "",
+                "pfpLocation" : "ava/profile.jpg",
+                "username" : obj.username ? obj.username : null,
                 "role" : obj.role
             })
         })

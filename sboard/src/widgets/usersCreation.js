@@ -15,7 +15,6 @@ function UsersCreation() {
     const [isLoading, setIsLoading] = useState(false);
     
     const createUser = async () => {
-        console.log(username, password, role, enabled)
         if(username && password && role){
             setIsLoading(true)
             let response = await addUser({username, password, role, enabled})

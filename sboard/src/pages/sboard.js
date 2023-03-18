@@ -9,6 +9,7 @@ import '../css/content.css'
 import Dashboard from '../layouts/dashboard.js'
 import Presentations from '../layouts/presentations'
 import Availability from '../layouts/availability';
+import Profile from "../layouts/profile";
 import { ToastContainer } from "react-toastify";
 import Users from "../layouts/users";
 
@@ -25,6 +26,7 @@ function Sboard() {
                         <Route path='/beschikbaarheid' element={<Availability/>}></Route>
                         <Route path='/dashboard' element={<Dashboard/>}></Route>
                         <Route path='/presentaties' element={<Presentations/>}></Route>
+                        <Route path='/profile' element={<Profile/>}></Route>
                         {
                             role == "ROLE_ADMIN" && 
                             <Route path='/gebruikers' element={<Users/>}></Route>
