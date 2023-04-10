@@ -5,7 +5,7 @@ import LoginItem from "../widgets/loginItem"
 
 function Login() {
     return (
-        <div className='container-fluid wrapper'>
+        <div className='container-fluid wrapper wrapper-img'>
             <ToastContainer/>
             <div className='row h-100'>
                 <div className="col-md-4">

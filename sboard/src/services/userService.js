@@ -70,7 +70,7 @@ export async function updateUser(obj){
                 "enabled": obj.enabled ? obj.enabled : true,
                 "password" : obj.password ? obj.password : "",
                 "pfpLocation" : "ava/profile.jpg",
-                "username" : obj.username ? obj.username : null,
+                "username" : obj.username ? obj.username : "",
                 "role" : obj.role
             })
         })

@@ -11,6 +11,7 @@
 }
 .user-img{
     border-radius: 6px;
+    border: 2px solid white;
 }
 
 .sboard-header {
@@ -32,6 +33,10 @@
 }
 .profile-item:hover {
     margin-bottom:4px !important ;
+}
+
+.sboard-icons-nav {
+    color: #1f9bee !important;
 }
 
 li {

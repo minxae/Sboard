@@ -12,6 +12,8 @@ import Availability from '../layouts/availability';
 import Profile from "../layouts/profile";
 import { ToastContainer } from "react-toastify";
 import Users from "../layouts/users";
+import Screens from "../layouts/screens";
+import Slideshows from "../layouts/slideshows";
 
 
 function Sboard() {
@@ -27,11 +29,12 @@ function Sboard() {
                         <Route path='/dashboard' element={<Dashboard/>}></Route>
                         <Route path='/presentaties' element={<Presentations/>}></Route>
                         <Route path='/profile' element={<Profile/>}></Route>
+                        <Route path='/toevoegen' element={<Screens/>}></Route>
+                        <Route path='/slideshows' element={<Slideshows/>}></Route>
                         {
                             role == "ROLE_ADMIN" && 
                             <Route path='/gebruikers' element={<Users/>}></Route>
                         }
-                        
                     </Routes>
                 </div>
                 <ShortcutBar />

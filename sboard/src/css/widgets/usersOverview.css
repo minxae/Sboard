@@ -17,3 +17,8 @@
 .admin-active {
     color: #1f9bee;
 }
+
+.all-users-item {
+    height: 500px;
+    overflow: auto;
+}
