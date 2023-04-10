@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import '../css/widgets/availabilityStatus.css'
 import {CheckLg, XLg}  from 'react-bootstrap-icons'
 import getUser from '../services/sboardService';
-import { getSlideShow } from '../services/slideShowService';
+import { getSlideshows } from '../services/slideshowService';
 
 
 
@@ -36,7 +36,7 @@ function ScreensTotal() {
   }
 
   async function getSlideShowTotal(){
-    let data = await getSlideShow();
+    let data = await getSlideshows();
     if(data.status == 200){
         let json = await data.json();
             return json
