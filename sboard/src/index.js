@@ -4,10 +4,12 @@ import { BrowserRouter as Router,Routes, Route, redirect} from 'react-router-dom
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import Sboard from './pages/sboard';
 import Login from './pages/login'
+import ScreenSelection from './pages/screenSelection';
 import reportWebVitals from './reportWebVitals';
 import ProtectedRoutes from './middleware/protectedRoutes';
 import store from './redux/store';
 import { Provider } from 'react-redux';
+import StudentView from './pages/studentView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,9 +21,11 @@ root.render(
                     <Route exact path='/login' element={<Login/>}></Route>
                     <Route element={<ProtectedRoutes />}>
                         <Route path='/*' element={<Sboard />}></Route>
-                        <Route exact path='/Sboard' element={<div>SBOARD PREVIEWS SCREEN</div>}></Route>
-                    </Route>
-                    
+                        
+                    </Route>    
+                    //add this route back into the protected area for jwt check
+                    <Route exact path='/sboard' element={<StudentView/>}></Route>
+                    <Route exact path='/schermen' element={<ScreenSelection/>}></Route>
                 </Routes>
             </Router>
         </Provider>

@@ -1,0 +1,16 @@
+.screenItem {
+    background: #f2f2f2;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    margin: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.screenItem:hover {
+    background-color: #1999ed;
+    color: white !important;
+}
+
+.screenArrowIcon {
+    color: #f2f2f2;
+}
