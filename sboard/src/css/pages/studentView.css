@@ -1,5 +1,5 @@
 .sboard-widget{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(247 247 247);
     border: 1px solid rgb(196, 196, 196);
     border-radius: 7px;
 }
@@ -22,10 +22,10 @@
 }
 
 .sb-head  {
-    height: 5%;
+    height: 10%;
 }
 
 .sb-bottom {
-    height: 95%;
+    height: 90%;
     color: rgb(71, 71, 71);
 }

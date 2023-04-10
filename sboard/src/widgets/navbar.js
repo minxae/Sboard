@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom'
 import '../css/widgets/navbar.css'
-import {Speedometer, Clock, ListUl, PeopleFill, Tv, Plus}  from 'react-bootstrap-icons'
+import {Speedometer, Clock, ListUl, PeopleFill, Tv, Plus, ColumnsGap}  from 'react-bootstrap-icons'
 import { useSelector } from 'react-redux';
 
 function Navbar() {
@@ -30,6 +30,9 @@ function Navbar() {
                 </li>
                 <li onClick={() => navigate("/slideshows")}>
                     <Plus className='me-2'/> Slideshows
+                </li>
+                <li onClick={() => navigate("/sboard")}>
+                    <ColumnsGap className='me-2 sboard-icons-nav'/> Sboard
                 </li>
                 {
                     role == "ROLE_ADMIN" && 

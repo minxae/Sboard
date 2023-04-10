@@ -26,7 +26,8 @@ function StudentViewTeacherAva() {
             <div className="col-md">
                 <div className="row sb-head">
                     <div className="col-md">
-                        <h1 className="sboard-header-student"><CaretRightFill/> Docenten</h1>
+                        <h1 className="sboard-header-student"><CaretRightFill color="#1f9bee"/> Docenten</h1>
+                        <hr></hr>
                     </div>
                 </div>
                 <div className="row sb-bottom p-3">

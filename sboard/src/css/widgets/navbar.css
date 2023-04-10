@@ -35,6 +35,10 @@
     margin-bottom:4px !important ;
 }
 
+.sboard-icons-nav {
+    color: #1f9bee !important;
+}
+
 li {
     list-style: none;
     padding: 10px;
