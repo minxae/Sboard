@@ -20,8 +20,7 @@ export async function createSlideshow(slideshow) {
     }
 }
 
-export async function getSlideshows(slideshow) {
-    console.log(slideshow)
+export async function getSlideshows() {
     const endpoint = "/slideshows";
     try {
         const response = await fetch(url + endpoint,   {
