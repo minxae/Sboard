@@ -1,6 +1,9 @@
 import { InfoCircle } from "react-bootstrap-icons";
 import { useSelector } from "react-redux";
 import AvailabilityStatus from "../widgets/availabilityStatus";
+import AvailableDays from "../widgets/availableDays";
+import SlideShowTotal from "../widgets/slideShowTotal";
+import ScreenTotal from "../widgets/screensAndTotal";
 
 function Dashboard() {
     const {username} = useSelector((state) => state.user)
@@ -17,7 +20,13 @@ function Dashboard() {
 
                 </div>
                 <div className="col-md-6">
-                    <AvailabilityStatus />
+                    <AvailableDays />
+                </div>
+                <div className="col-md-6">
+                    <SlideShowTotal />
+                </div>
+                <div className="col-md-6">
+                    <ScreenTotal />
                 </div>
             </div>
         </div>

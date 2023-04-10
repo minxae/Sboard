@@ -21,6 +21,7 @@ function LoginItem() {
         console.log(screenCheck)
         setButtonStatus(true)
         let data = await login(username, password);
+        console.log(data.status);
         if(data.status == 200){
             toast.success("Inloggen succesvol")
             let jwt = data.headers.get("jwt-token")
