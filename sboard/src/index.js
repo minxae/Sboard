@@ -21,11 +21,11 @@ root.render(
                     <Route exact path='/login' element={<Login/>}></Route>
                     <Route element={<ProtectedRoutes />}>
                         <Route path='/*' element={<Sboard />}></Route>
+                        <Route exact path='/sboard' element={<StudentView/>}></Route>
+                        <Route exact path='/schermen' element={<ScreenSelection/>}></Route>
                         
                     </Route>    
-                    //add this route back into the protected area for jwt check
-                    <Route exact path='/sboard' element={<StudentView/>}></Route>
-                    <Route exact path='/schermen' element={<ScreenSelection/>}></Route>
+                    
                 </Routes>
             </Router>
         </Provider>
